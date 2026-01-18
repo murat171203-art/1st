@@ -1,0 +1,7 @@
+{
+  "name": "ManasPrint MVP",
+  "description": "A streamlined printing and academic document processing service for students. Features online ordering, error checking, and template formatting services with real-time cost calculation.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
