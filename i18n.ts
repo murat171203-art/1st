@@ -5,17 +5,12 @@ export const translations = {
   [Language.KY]: {
     nav: { services: 'Кызматтар', locations: 'Даректер', contact: 'Байланыш', myOrders: 'Менин буйрутмаларым' },
     hero: { title: 'Академиялык иштериңизди басып чыгаруу жана жакшыртуу', subtitle: 'Басып чыгаруу, каталарды текшерүү жана шаблонго келтирүү үчүн тез жана оңой буйрутма берүү. Онлайн жана офлайн иштейбиз!', cta: 'Буйрутма берүү' },
-    stats: {
-      visitors: 'Келүүчүлөр',
-      payments: 'Төлөмдөр',
-      completed: 'Бүткөн иштер',
-      pages: 'Басылган барактар'
-    },
     process: {
       title: 'Кандай иштейт?',
-      step1: { t: 'Жүктөө', d: 'Файлыңызды форматта же басып чыгаруу үчүн жүктөп бериңиз.' },
-      step2: { t: 'Тандоо', d: 'AI анализинен кийин керектүү кызматтарды тандаңыз.' },
-      step3: { t: 'Алуу', d: 'Даяр ишти офистен алыңыз же санарип жүктөп алыңыз.' }
+      step1: { t: 'Жүктөө', d: 'Дипломдук иштин ворд версиясын жүктөңүз.' },
+      step2: { t: 'Текшерүү', d: 'Превью аркылуу ишти текшерип көрүңүз.' },
+      step3: { t: 'Төлөм', d: 'МБанк QR аркылуу төлөм жүргүзүңүз.' },
+      step4: { t: 'Алуу', d: 'Даяр ишти жүктөп алыңыз.' }
     },
     faq: {
       title: 'Көп берилүүчү суроолор',
@@ -80,11 +75,11 @@ export const translations = {
       payment: 'M-Bank жана Bak-AI QR'
     },
     locations: {
-      manasG: 'КТУ "Манас" G-корпус',
-      manasGAddr: 'Джал-30/43 Кампус КТУ "Манас" G-block',
-      philharmony: 'Филармония (Западная сторона)',
+      manasG: 'Джал 30-43',
+      manasGAddr: 'Кампус КТУ "Манас" G-block',
+      philharmony: 'Филармония',
       philharmonyAddr: 'Западная сторона филармонии. "Касса"',
-      dzhamanbaeva: 'Джаманбаева 35',
+      dzhamanbaeva: 'Комок',
       dzhamanbaevaAddr: 'Джаманбаева 35 "КОМОК"',
       hours: 'Иштөө убактысы'
     },
@@ -97,17 +92,12 @@ export const translations = {
   [Language.TR]: {
     nav: { services: 'Hizmetler', locations: 'Konumlar', contact: 'İletişim', myOrders: 'Siparişlerim' },
     hero: { title: 'Akademik çalışmalarınızı basın ve mükemmelleştirin', subtitle: 'Hızlı ve kolay sipariş!', cta: 'Sipariş Ver' },
-    stats: {
-      visitors: 'Ziyaretçiler',
-      payments: 'Ödemeler',
-      completed: 'Tamamlanan İşler',
-      pages: 'Basılan Sayfalar'
-    },
     process: {
       title: 'Nasıl Çalışır?',
       step1: { t: 'Yükle', d: 'Dosyanızı yükleyin.' },
-      step2: { t: 'Seç', d: 'Hizmetleri seçin.' },
-      step3: { t: 'Al', d: 'Dosyayı ofisten alın.' }
+      step2: { t: 'Kontrol', d: 'Önizleme ile kontrol edin.' },
+      step3: { t: 'Ödeme', d: 'QR ile ödeme yapın.' },
+      step4: { t: 'İndir', d: 'Dosyayı indirin.' }
     },
     faq: {
       title: 'SSS',
@@ -189,17 +179,12 @@ export const translations = {
   [Language.RU]: {
     nav: { services: 'Услуги', locations: 'Адреса', contact: 'Контакты', myOrders: 'Мои заказы' },
     hero: { title: 'Печатайте и совершенствуйте свои учебные работы', subtitle: 'Быстрый и простой заказ!', cta: 'Сделать заказ' },
-    stats: {
-      visitors: 'Посетителей',
-      payments: 'Оплат',
-      completed: 'Выполнено работ',
-      pages: 'Напечатано страниц'
-    },
     process: {
       title: 'Как это работает?',
-      step1: { t: 'Загрузка', d: 'Загрузите файл.' },
-      step2: { t: 'Выбор', d: 'Выберите нужные услуги.' },
-      step3: { t: 'Получение', d: 'Заберите в офисе.' }
+      step1: { t: 'Загрузка', d: 'Загрузите ворд версию дипломной работы.' },
+      step2: { t: 'Проверка', d: 'Проверьте работу через превью.' },
+      step3: { t: 'Оплата', d: 'Произведите оплату через МБанк QR.' },
+      step4: { t: 'Получение', d: 'Скачайте готовую работу.' }
     },
     faq: {
       title: 'Частые вопросы',
@@ -264,11 +249,11 @@ export const translations = {
       payment: 'QR M-Bank и Bak-AI'
     },
     locations: {
-      manasG: 'КТУ "Манас" G-корпус',
-      manasGAddr: 'Джал-30/43 Кампус КТУ "Манас" G-block',
-      philharmony: 'Филармония (Западная сторона)',
+      manasG: 'Джал 30-43',
+      manasGAddr: 'Кампус КТУ "Манас" G-block',
+      philharmony: 'Филармония',
       philharmonyAddr: 'Западная сторона филармонии. "Касса"',
-      dzhamanbaeva: 'Джаманбаева 35',
+      dzhamanbaeva: 'Комок',
       dzhamanbaevaAddr: 'ул. Джаманбаева 35 "КОМОК"',
       hours: 'Часы работы'
     },
@@ -281,17 +266,12 @@ export const translations = {
   [Language.EN]: {
     nav: { services: 'Services', locations: 'Locations', contact: 'Contact', myOrders: 'My Orders' },
     hero: { title: 'Print and perfect your academic works', subtitle: 'Fast and easy ordering!', cta: 'Make an Order' },
-    stats: {
-      visitors: 'Visitors',
-      payments: 'Payments',
-      completed: 'Works Completed',
-      pages: 'Pages Printed'
-    },
     process: {
       title: 'How it Works?',
-      step1: { t: 'Upload', d: 'Upload your file.' },
-      step2: { t: 'Select', d: 'Choose services.' },
-      step3: { t: 'Receive', d: 'Pickup from office.' }
+      step1: { t: 'Upload', d: 'Upload your Word document.' },
+      step2: { t: 'Preview', d: 'Check the preview.' },
+      step3: { t: 'Payment', d: 'Pay via QR code.' },
+      step4: { t: 'Download', d: 'Download the result.' }
     },
     faq: {
       title: 'FAQ',
@@ -356,11 +336,11 @@ export const translations = {
       payment: 'M-Bank & Bak-AI QR'
     },
     locations: {
-      manasG: 'KTMU "Manas" G-block',
-      manasGAddr: 'Jal-30/43 Campus KTMU "Manas" G-block',
-      philharmony: 'Philharmony (West side)',
+      manasG: 'Jal 30-43',
+      manasGAddr: 'KTMU "Manas" G-block Campus',
+      philharmony: 'Philharmony',
       philharmonyAddr: 'Western side of the Philharmony. "Kassa"',
-      dzhamanbaeva: 'Dzhamanbaeva 35',
+      dzhamanbaeva: 'Komok',
       dzhamanbaevaAddr: 'Dzhamanbaeva 35 "KOMOK"',
       hours: 'Hours'
     },

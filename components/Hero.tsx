@@ -56,18 +56,6 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
                 Learn More
               </a>
             </div>
-
-            <div className="mt-16 flex items-center justify-center lg:justify-start gap-12 opacity-80 animate__animated animate__fadeIn" style={{ animationDelay: '0.6s' }}>
-               <div className="flex flex-col items-center lg:items-start group cursor-default">
-                  <span className="text-3xl font-black text-slate-900 group-hover:text-indigo-600 transition-colors">20k+</span>
-                  <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Pages Printed</span>
-               </div>
-               <div className="w-px h-12 bg-slate-200"></div>
-               <div className="flex flex-col items-center lg:items-start group cursor-default">
-                  <span className="text-3xl font-black text-slate-900 group-hover:text-indigo-600 transition-colors">1.2k+</span>
-                  <span className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Students Helped</span>
-               </div>
-            </div>
           </div>
 
           <div className="mt-24 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-5 lg:flex lg:items-center animate__animated animate__fadeInRight">

@@ -42,6 +42,8 @@ export interface OfficeLocation {
   addressKey: string;
   coords: { lat: number; lng: number };
   workingHoursKey: string;
+  mapUrl: string;
+  phone: string;
   isDeveloping?: boolean;
 }
 

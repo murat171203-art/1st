@@ -7,7 +7,6 @@ import WorkingHours from './components/WorkingHours';
 import OrderHistory from './components/OrderHistory';
 import MobileNav from './components/MobileNav';
 import ChatBot from './components/ChatBot';
-import StatsSection from './components/StatsSection';
 import { OFFICE_LOCATIONS } from './constants';
 import { Language } from './types';
 import { translations } from './i18n';
@@ -75,8 +74,6 @@ const App: React.FC = () => {
           <>
             <Hero onStart={() => setView('order')} />
 
-            <StatsSection />
-            
             {/* How It Works Section */}
             <section className="py-24 bg-white relative overflow-hidden">
               <div className="absolute -top-24 -left-24 w-96 h-96 bg-indigo-50 rounded-full blur-3xl opacity-50"></div>
@@ -85,21 +82,16 @@ const App: React.FC = () => {
                   <span className="text-indigo-600 font-black uppercase tracking-[0.3em] text-xs">Simple Process</span>
                   <h2 className="text-4xl font-black text-slate-900">{getTranslation('process.title')}</h2>
                 </div>
-                <div className="grid md:grid-cols-3 gap-12">
-                  {[1, 2, 3].map((num) => (
+                <div className="grid md:grid-cols-4 gap-8">
+                  {[1, 2, 3, 4].map((num) => (
                     <div key={num} className="relative group">
-                      <div className="bg-slate-50 rounded-[2.5rem] p-10 border border-slate-100 hover:border-indigo-100 transition-all hover:bg-white hover:shadow-2xl hover:shadow-indigo-100/50">
-                        <div className="w-16 h-16 bg-white shadow-xl rounded-2xl flex items-center justify-center text-2xl font-black text-indigo-600 mb-8 group-hover:scale-110 group-hover:rotate-6 transition-transform">
+                      <div className="bg-slate-50 rounded-[2.5rem] p-8 border border-slate-100 hover:border-indigo-100 transition-all hover:bg-white hover:shadow-2xl hover:shadow-indigo-100/50">
+                        <div className="w-14 h-14 bg-white shadow-xl rounded-2xl flex items-center justify-center text-xl font-black text-indigo-600 mb-6 group-hover:scale-110 group-hover:rotate-6 transition-transform">
                           0{num}
                         </div>
-                        <h3 className="text-2xl font-bold mb-4 text-slate-900">{getTranslation(`process.step${num}.t`)}</h3>
-                        <p className="text-slate-500 leading-relaxed text-lg">{getTranslation(`process.step${num}.d`)}</p>
+                        <h3 className="text-xl font-bold mb-3 text-slate-900">{getTranslation(`process.step${num}.t`)}</h3>
+                        <p className="text-slate-500 leading-relaxed text-base">{getTranslation(`process.step${num}.d`)}</p>
                       </div>
-                      {num < 3 && (
-                        <div className="hidden lg:block absolute top-1/2 -right-6 translate-x-full text-slate-200 text-4xl">
-                          <i className="fas fa-arrow-right"></i>
-                        </div>
-                      )}
                     </div>
                   ))}
                 </div>
@@ -142,7 +134,13 @@ const App: React.FC = () => {
                 </div>
                 <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {OFFICE_LOCATIONS.map(loc => (
-                    <div key={loc.id} className="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-indigo-200 transition-colors group">
+                    <a 
+                      key={loc.id} 
+                      href={loc.mapUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-slate-50 p-8 rounded-3xl border border-slate-100 hover:border-indigo-200 transition-colors group block"
+                    >
                       <div className="flex items-center gap-4 mb-6">
                          <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center text-indigo-600 group-hover:bg-indigo-600 group-hover:text-white transition-all">
                             <i className="fas fa-map-pin"></i>
@@ -150,13 +148,21 @@ const App: React.FC = () => {
                          <h3 className="font-bold text-xl text-slate-800">{getTranslation(loc.nameKey)}</h3>
                       </div>
                       <p className="text-slate-500 mb-6 leading-relaxed">{getTranslation(loc.addressKey)}</p>
-                      <div className="flex items-center justify-between text-sm font-bold text-slate-400 border-t border-slate-200 pt-6">
-                        <span className="flex items-center gap-2">
-                           <i className="fas fa-clock text-indigo-300"></i> {getTranslation('locations.hours')}
-                        </span>
-                        <span className="text-slate-900">{loc.workingHoursKey}</span>
+                      <div className="space-y-3 border-t border-slate-200 pt-6">
+                        <div className="flex items-center justify-between text-sm font-bold text-slate-400">
+                          <span className="flex items-center gap-2">
+                             <i className="fas fa-clock text-indigo-300"></i> {getTranslation('locations.hours')}
+                          </span>
+                          <span className="text-slate-900">{loc.workingHoursKey}</span>
+                        </div>
+                        <div className="flex items-center justify-between text-sm font-bold text-slate-400">
+                          <span className="flex items-center gap-2">
+                             <i className="fas fa-phone text-indigo-300"></i> {getTranslation('contact.phone')}
+                          </span>
+                          <span className="text-slate-900">{loc.phone}</span>
+                        </div>
                       </div>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </div>
