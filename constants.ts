@@ -45,7 +45,7 @@ export const OFFICE_LOCATIONS: OfficeLocation[] = [
     addressKey: 'locations.dzhamanbaevaAddr',
     coords: { lat: 42.8488, lng: 74.5921 },
     workingHoursKey: '08:00 - 21:00',
-    mapUrl: 'https://go.2gis.com/uOiZ3',
+    mapUrl: 'https://go.2gis.com/VVzIv',
     phone: '+996 706 229 979'
   }
 ];

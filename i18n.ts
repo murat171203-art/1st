@@ -8,16 +8,18 @@ export const translations = {
     process: {
       title: 'Кандай иштейт?',
       step1: { t: 'Жүктөө', d: 'Дипломдук иштин ворд версиясын жүктөңүз.' },
-      step2: { t: 'Текшерүү', d: 'Превью аркылуу ишти текшерип көрүңүз.' },
-      step3: { t: 'Төлөм', d: 'МБанк QR аркылуу төлөм жүргүзүңүз.' },
-      step4: { t: 'Алуу', d: 'Даяр ишти жүктөп алыңыз.' }
+      step2: { t: 'Иш аткаруу жана текшерүү', d: 'Превью аркылуу ишти текшерип көрүңүз.' },
+      step3: { t: 'Төлөө', d: 'МБанк QR аркылуу төлөм жүргүзүңүз.' },
+      step4: { t: 'Жүктөп алуу', d: 'Даяр ишти жүктөп алыңыз.' }
     },
     faq: {
       title: 'Көп берилүүчү суроолор',
       q1: 'Даярдоо убактысы канча?',
       a1: 'Басып чыгаруу 15 мүнөт, ал эми эксперттик текшерүү 2-4 саатты алат.',
       q2: 'Төлөм кандай жүрөт?',
-      a2: 'Офистен накталай же QR-код аркылуу төлөсөңүз болот.'
+      a2: 'Офистен накталай же QR-код аркылуу төлөсөңүз болот.',
+      q3: 'Файлдардын коопсуздугу кандай болот?',
+      a3: 'Файлдарды сактаганы серверде орун жетишпейт. Кызмат аткарылып, сиз жүктөп алгандан кийин файлдар биздин серверден дароо өчүрүлөт.'
     },
     features: {
       title: 'Бардык академиялык муктаждыктар бир жерде',
@@ -95,7 +97,7 @@ export const translations = {
     process: {
       title: 'Nasıl Çalışır?',
       step1: { t: 'Yükle', d: 'Dosyanızı yükleyin.' },
-      step2: { t: 'Kontrol', d: 'Önizleme ile kontrol edin.' },
+      step2: { t: 'İşlem ve Kontrol', d: 'Önizleme ile kontrol edin.' },
       step3: { t: 'Ödeme', d: 'QR ile ödeme yapın.' },
       step4: { t: 'İndir', d: 'Dosyayı indirin.' }
     },
@@ -104,7 +106,9 @@ export const translations = {
       q1: 'Hazırlanma süresi?',
       a1: 'Baskı 15 dk, inceleme 2-4 saat.',
       q2: 'Ödeme?',
-      a2: 'Nakit veya QR ile.'
+      a2: 'Nakit veya QR ile.',
+      q3: 'Dosya güvenliği nasıl sağlanıyor?',
+      a3: 'Sunucumuzda dosyaları saklamak için yeterli alan bulunmamaktadır. Hizmet tamamlanıp dosyanızı indirdikten sonra dosyalarınız sunucularımızdan tamamen silinir.'
     },
     features: {
       title: 'Tüm akademik ihtiyaçlar',
@@ -182,16 +186,18 @@ export const translations = {
     process: {
       title: 'Как это работает?',
       step1: { t: 'Загрузка', d: 'Загрузите ворд версию дипломной работы.' },
-      step2: { t: 'Проверка', d: 'Проверьте работу через превью.' },
+      step2: { t: 'Обработка и проверка', d: 'Проверьте работу через превью.' },
       step3: { t: 'Оплата', d: 'Произведите оплату через МБанк QR.' },
-      step4: { t: 'Получение', d: 'Скачайте готовую работу.' }
+      step4: { t: 'Скачивание', d: 'Скачайте готовую работу.' }
     },
     faq: {
       title: 'Частые вопросы',
       q1: 'Сколько времени это займет?',
       a1: 'Печать — 15 минут, проверка — 2-4 часа.',
       q2: 'Как оплатить?',
-      a2: 'Наличными или через QR.'
+      a2: 'Наличными или через QR.',
+      q3: 'Как обеспечивается безопасность файлов?',
+      a3: 'На сервере недостаточно места для хранения файлов. После выполнения услуги и скачивания вами файла, он сразу же удаляется с наших серверов.'
     },
     features: {
       title: 'Все академияческие нужды',
@@ -269,7 +275,7 @@ export const translations = {
     process: {
       title: 'How it Works?',
       step1: { t: 'Upload', d: 'Upload your Word document.' },
-      step2: { t: 'Preview', d: 'Check the preview.' },
+      step2: { t: 'Process & Verify', d: 'Check the preview.' },
       step3: { t: 'Payment', d: 'Pay via QR code.' },
       step4: { t: 'Download', d: 'Download the result.' }
     },
@@ -278,7 +284,9 @@ export const translations = {
       q1: 'Turnaround time?',
       a1: 'Printing 15 mins, review 2-4 hours.',
       q2: 'How to pay?',
-      a2: 'Cash or via QR.'
+      a2: 'Cash or via QR.',
+      q3: 'How is file security handled?',
+      a3: 'We do not have enough server space to store files. After the service is completed and you download your file, it is immediately deleted from our servers.'
     },
     features: {
       title: 'Academic needs covered',
