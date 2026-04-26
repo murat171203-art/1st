@@ -50,6 +50,17 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
       <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-amber-900/20 via-[#09090b] to-[#09090b] pointer-events-none"></div>
       <div className="absolute -top-24 -left-24 w-96 h-96 bg-amber-600/10 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+      
+      {/* Floating Icons */}
+      <div className="absolute top-1/4 left-10 text-amber-500/20 text-4xl animate-bounce pointer-events-none hidden lg:block" style={{ animationDuration: '3s' }}>
+        <i className="fas fa-print"></i>
+      </div>
+      <div className="absolute top-1/3 right-10 text-amber-500/10 text-6xl animate-pulse pointer-events-none hidden lg:block" style={{ animationDuration: '4s' }}>
+        <i className="fas fa-file-word"></i>
+      </div>
+      <div className="absolute bottom-1/4 left-1/4 text-amber-500/15 text-3xl animate-bounce pointer-events-none hidden lg:block" style={{ animationDuration: '5s' }}>
+        <i className="fas fa-spell-check"></i>
+      </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="lg:grid lg:grid-cols-12 lg:gap-20">
@@ -89,27 +100,11 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
             <div className="mt-12 sm:max-w-lg sm:mx-auto sm:text-center lg:text-left lg:mx-0 flex flex-col sm:flex-row gap-5 animate__animated animate__fadeInUp" style={{ animationDelay: '0.4s' }}>
               <button
                 onClick={onStart}
-                className="group inline-flex items-center justify-center px-12 py-6 border border-transparent text-xl font-black rounded-[2rem] text-black bg-gradient-to-r from-amber-400 to-yellow-500 hover:from-amber-300 hover:to-yellow-400 shadow-[0_0_40px_rgba(245,158,11,0.3)] transition-all transform hover:-translate-y-1.5 active:scale-95"
+                className="group inline-flex items-center justify-center px-12 py-6 border border-green-500/30 text-xl font-black rounded-[2rem] text-green-400 bg-zinc-900 hover:bg-green-500/10 shadow-[0_0_40px_rgba(34,197,94,0.2)] transition-all transform hover:-translate-y-1.5 active:scale-95"
               >
                 {t('hero.cta')}
                 <i className="fas fa-arrow-right ml-4 group-hover:translate-x-2 transition-transform"></i>
               </button>
-            </div>
-
-            {/* Trust Indicators */}
-            <div className="mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-6 text-sm font-bold text-zinc-500 animate__animated animate__fadeInUp" style={{ animationDelay: '0.6s' }}>
-              <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-xl border border-white/5">
-                <i className="fas fa-shield-check text-amber-500 text-lg"></i>
-                <span>100% Купуялуулук</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-xl border border-white/5">
-                <i className="fas fa-file-certificate text-amber-500 text-lg"></i>
-                <span>ГОСТ Стандарт</span>
-              </div>
-              <div className="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-xl border border-white/5">
-                <i className="fas fa-star text-amber-500 text-lg"></i>
-                <span>5.0 Рейтинг</span>
-              </div>
             </div>
           </div>
 
@@ -125,7 +120,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#09090b] via-[#09090b]/40 to-transparent"></div>
                   <div className="absolute bottom-10 left-10 right-10 bg-white/5 backdrop-blur-xl border border-white/10 p-8 rounded-[2.5rem] transform group-hover:-translate-y-2 transition-transform duration-700">
                      <div className="flex items-center gap-5 text-white">
-                        <div className="w-14 h-14 bg-gradient-to-br from-amber-400 to-yellow-600 rounded-2xl flex items-center justify-center text-black text-2xl shadow-lg shadow-amber-500/30">
+                        <div className="w-14 h-14 bg-amber-500/10 border border-amber-500/20 rounded-2xl flex items-center justify-center text-amber-500 text-2xl shadow-lg shadow-amber-500/10">
                            <i className="fas fa-crown"></i>
                         </div>
                         <div>
@@ -148,7 +143,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
               className="group cursor-pointer bg-zinc-900/40 backdrop-blur-md border border-white/5 p-8 rounded-[2.5rem] hover:bg-zinc-800/80 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_0_40px_rgba(245,158,11,0.15)] hover:border-amber-500/30"
               style={{ animationDelay: `${0.6 + index * 0.2}s` }}
             >
-              <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-2xl text-amber-500 mb-6 group-hover:scale-110 group-hover:bg-gradient-to-br group-hover:from-amber-400 group-hover:to-yellow-600 group-hover:text-black transition-all duration-500 shadow-lg group-hover:shadow-amber-500/40">
+              <div className="w-16 h-16 bg-white/5 rounded-2xl flex items-center justify-center text-2xl text-amber-500 mb-6 group-hover:scale-110 group-hover:bg-amber-500/10 group-hover:text-amber-500 transition-all duration-500 shadow-lg group-hover:shadow-amber-500/10">
                 <i className={`fas ${data.icon}`}></i>
               </div>
               <h3 className="text-xl font-black text-white mb-4 group-hover:text-amber-400 transition-colors">{data.title}</h3>
@@ -189,7 +184,7 @@ const Hero: React.FC<HeroProps> = ({ onStart }) => {
             
             <button 
               onClick={() => setActiveModal(null)}
-              className="mt-8 w-full py-4 rounded-2xl font-bold bg-white/5 text-white hover:bg-amber-500 hover:text-black transition-all"
+              className="mt-8 w-full py-4 rounded-2xl font-bold bg-white/5 text-white hover:bg-amber-500/10 hover:text-amber-500 transition-all"
             >
               Жабуу
             </button>

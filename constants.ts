@@ -44,14 +44,14 @@ export const OFFICE_LOCATIONS: OfficeLocation[] = [
     nameKey: 'locations.dzhamanbaeva',
     addressKey: 'locations.dzhamanbaevaAddr',
     coords: { lat: 42.8488, lng: 74.5921 },
-    workingHoursKey: '08:00 - 21:00',
-    mapUrl: 'https://go.2gis.com/VVzIv',
-    phone: '+996 706 229 979'
+    workingHoursKey: '',
+    mapUrl: 'https://go.2gis.com/ag0dC',
+    phone: '00000000'
   }
 ];
 
 export const WORKING_HOURS_DAYS = [
   { dayKey: 'Джал 30-43', hours: '07:00 - 20:00' },
   { dayKey: 'Филармония', hours: '09:30 - 18:00' },
-  { dayKey: 'Комок', hours: '08:00 - 21:00' }
+  { dayKey: 'БГУ', hours: '' }
 ];

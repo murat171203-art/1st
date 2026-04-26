@@ -65,7 +65,7 @@ const OrderHistory: React.FC = () => {
                   </p>
                 </div>
                 {order.delivery === DeliveryMethod.DIGITAL && (
-                   <button className="w-10 h-10 rounded-xl bg-white/5 text-zinc-400 flex items-center justify-center border border-white/10 hover:bg-amber-500 hover:text-black hover:border-amber-500 transition-all">
+                   <button className="w-10 h-10 rounded-xl bg-white/5 text-zinc-400 flex items-center justify-center border border-white/10 hover:bg-amber-500/10 hover:text-amber-500 hover:border-amber-500/30 transition-all">
                       <i className="fas fa-download"></i>
                    </button>
                 )}

@@ -25,7 +25,7 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, onHistoryClick }) => {
           onClick={onLogoClick} 
           className="flex items-center gap-2 cursor-pointer group"
         >
-          <div className="bg-amber-500/10 text-amber-500 border border-amber-500/20 p-2 rounded-lg group-hover:bg-amber-500 group-hover:text-black transition-all">
+          <div className="bg-amber-500/10 text-amber-500 border border-amber-500/20 p-2 rounded-lg group-hover:bg-amber-500/10 transition-all">
             <i className="fas fa-print text-xl"></i>
           </div>
           <span className="text-xl font-bold tracking-tight text-white">Manas<span className="text-amber-500">Print</span></span>
@@ -45,7 +45,7 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, onHistoryClick }) => {
                 onClick={() => setLanguage(lang.code)}
                 className={`px-2 py-1 text-[10px] font-bold rounded-md transition-all ${
                   language === lang.code 
-                    ? 'bg-amber-500 text-black shadow-sm' 
+                    ? 'bg-amber-500/20 text-amber-500 border border-amber-500/30' 
                     : 'text-zinc-500 hover:text-white'
                 }`}
               >
@@ -56,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({ onLogoClick, onHistoryClick }) => {
 
           <button 
             onClick={onHistoryClick}
-            className="hidden sm:flex items-center gap-2 bg-amber-500/10 text-amber-500 border border-amber-500/20 px-5 py-2.5 rounded-full text-xs font-black hover:bg-amber-500 hover:text-black transition-all uppercase tracking-widest"
+            className="hidden sm:flex items-center gap-2 bg-amber-500/10 text-amber-500 border border-amber-500/20 px-5 py-2.5 rounded-full text-xs font-black hover:bg-amber-500/20 transition-all uppercase tracking-widest"
           >
             <i className="fas fa-clock-rotate-left"></i>
             {t('nav.myOrders')}

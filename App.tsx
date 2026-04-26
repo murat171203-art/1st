@@ -2,6 +2,7 @@
 import React, { useState, createContext, useContext, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
+import ProcessSection from './components/ProcessSection';
 import OrderForm from './components/OrderForm';
 import WorkingHours from './components/WorkingHours';
 import OrderHistory from './components/OrderHistory';
@@ -54,7 +55,7 @@ const App: React.FC = () => {
             <div className="max-w-6xl mx-auto mb-12 flex items-center gap-6">
               <button 
                 onClick={() => setView('home')}
-                className="w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 hover:bg-amber-500 hover:text-black hover:border-amber-500 rounded-2xl shadow-sm transition-all text-zinc-400 group"
+                className="w-12 h-12 flex items-center justify-center bg-white/5 border border-white/10 hover:bg-amber-500/10 hover:text-amber-500 hover:border-amber-500/30 rounded-2xl shadow-sm transition-all text-zinc-400 group"
               >
                 <i className="fas fa-chevron-left group-hover:-translate-x-1 transition-transform"></i>
               </button>
@@ -77,41 +78,7 @@ const App: React.FC = () => {
           <>
             <Hero onStart={() => setView('order')} />
 
-            <section id="services" className="py-24 bg-[#09090b] relative overflow-hidden">
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-amber-600/5 rounded-full blur-[120px] pointer-events-none"></div>
-              <div className="max-w-7xl mx-auto px-4 relative z-10">
-                <div className="text-center mb-16 space-y-4">
-                  <span className="text-amber-500 font-black uppercase tracking-[0.3em] text-xs">Features</span>
-                  <h2 className="text-4xl font-black text-white">{getTranslation('features.title')}</h2>
-                  <p className="text-xl text-zinc-400 max-w-2xl mx-auto">{getTranslation('features.subtitle')}</p>
-                </div>
-                
-                <div className="grid md:grid-cols-3 gap-8">
-                  {[
-                    { id: 'print', icon: 'fa-print', title: 'features.print.title', desc: 'features.print.desc', color: 'amber' },
-                    { id: 'check', icon: 'fa-spell-check', title: 'features.check.title', desc: 'features.check.desc', color: 'yellow' },
-                    { id: 'sync', icon: 'fa-highlighter', title: 'features.sync.title', desc: 'features.sync.desc', color: 'orange' }
-                  ].map((f, i) => (
-                    <div 
-                      key={i} 
-                      onClick={() => f.id === 'sync' ? setView('order') : null}
-                      className={`group p-10 bg-zinc-900/40 backdrop-blur-md rounded-[2rem] shadow-sm hover:shadow-[0_0_40px_rgba(245,158,11,0.15)] hover:-translate-y-2 transition-all border border-white/5 hover:border-amber-500/30 ${f.id === 'sync' ? 'cursor-pointer' : ''}`}
-                    >
-                      <div className={`w-16 h-16 bg-${f.color}-500/10 text-${f.color}-500 border border-${f.color}-500/20 rounded-2xl flex items-center justify-center mb-8 text-2xl group-hover:scale-110 transition-transform`}>
-                        <i className={`fas ${f.icon}`}></i>
-                      </div>
-                      <h3 className="text-2xl font-bold mb-4 text-white">{getTranslation(f.title)}</h3>
-                      <p className="text-zinc-400 leading-relaxed text-lg">{getTranslation(f.desc)}</p>
-                      {f.id === 'sync' && (
-                        <div className="mt-6 text-amber-500 font-bold flex items-center gap-2 group-hover:translate-x-2 transition-transform">
-                          Баштоо <i className="fas fa-arrow-right"></i>
-                        </div>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
+            <ProcessSection />
 
             <section id="locations" className="py-24 bg-[#09090b] relative border-t border-white/5">
               <div className="max-w-7xl mx-auto px-4 relative z-10">

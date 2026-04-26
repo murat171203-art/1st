@@ -16,8 +16,8 @@ export const translations = {
       title: 'Көп берилүүчү суроолор',
       q1: 'Даярдоо убактысы канча?',
       a1: 'Басып чыгаруу 15 мүнөт, ал эми эксперттик текшерүү 2-4 саатты алат.',
-      q2: 'Төлөм кандай жүрөт?',
-      a2: 'Офистен накталай же QR-код аркылуу төлөсөңүз болот.',
+      q2: 'Кантип байланышсак болот?',
+      a2: 'Биздин офиске келип же онлайн байланыш тармактары аркылуу билдирүү калтырсаңыз болот.',
       q3: 'Файлдардын коопсуздугу кандай болот?',
       a3: 'Файлдарды сактаганы серверде орун жетишпейт. Кызмат аткарылып, сиз жүктөп алгандан кийин файлдар биздин серверден дароо өчүрүлөт.'
     },
@@ -74,15 +74,15 @@ export const translations = {
       desc: 'Биздин кампустагы офистен жардам ала аласыз.',
       phone: 'Телефон',
       email: 'Электрондук почта',
-      payment: 'M-Bank жана Bak-AI QR'
+      payment: 'Байланышуу'
     },
     locations: {
       manasG: 'Джал 30-43',
       manasGAddr: 'Кампус КТУ "Манас" G-block',
       philharmony: 'Филармония',
       philharmonyAddr: 'Западная сторона филармонии. "Касса"',
-      dzhamanbaeva: 'Комок',
-      dzhamanbaevaAddr: 'Джаманбаева 35 "КОМОК"',
+      dzhamanbaeva: 'БГУ',
+      dzhamanbaevaAddr: '',
       hours: 'Иштөө убактысы'
     },
     footer: {
@@ -163,15 +163,15 @@ export const translations = {
       desc: 'Kampüsteki ofisimize gelin.',
       phone: 'Telefon',
       email: 'E-posta',
-      payment: 'M-Bank ve Bak-AI QR'
+      payment: 'İletişim'
     },
     locations: {
       manasG: 'KTMÜ "Manas" G-blok',
       manasGAddr: 'Cal-30/43 Kampüs KTMÜ "Manas" G-blok',
       philharmony: 'Filarmoni (Batı Yakası)',
       philharmonyAddr: 'Filarmoni Batı Tarafı. "Kasa"',
-      dzhamanbaeva: 'Dzhamanbaeva 35',
-      dzhamanbaevaAddr: 'Dzhamanbaeva 35 "KOMOK"',
+      dzhamanbaeva: 'БГУ',
+      dzhamanbaevaAddr: '',
       hours: 'Saatler'
     },
     footer: {
@@ -252,15 +252,15 @@ export const translations = {
       desc: 'Наши офисы в удобных локациях.',
       phone: 'Телефон',
       email: 'Email',
-      payment: 'QR M-Bank и Bak-AI'
+      payment: 'Контакты'
     },
     locations: {
       manasG: 'Джал 30-43',
       manasGAddr: 'Кампус КТУ "Манас" G-block',
       philharmony: 'Филармония',
       philharmonyAddr: 'Западная сторона филармонии. "Касса"',
-      dzhamanbaeva: 'Комок',
-      dzhamanbaevaAddr: 'ул. Джаманбаева 35 "КОМОК"',
+      dzhamanbaeva: 'БГУ',
+      dzhamanbaevaAddr: '',
       hours: 'Часы работы'
     },
     footer: {
@@ -341,15 +341,15 @@ export const translations = {
       desc: 'Our offices are located on campus and downtown.',
       phone: 'Phone',
       email: 'Email',
-      payment: 'M-Bank & Bak-AI QR'
+      payment: 'Contact'
     },
     locations: {
       manasG: 'Jal 30-43',
       manasGAddr: 'KTMU "Manas" G-block Campus',
       philharmony: 'Philharmony',
       philharmonyAddr: 'Western side of the Philharmony. "Kassa"',
-      dzhamanbaeva: 'Komok',
-      dzhamanbaevaAddr: 'Dzhamanbaeva 35 "KOMOK"',
+      dzhamanbaeva: 'БГУ',
+      dzhamanbaevaAddr: '',
       hours: 'Hours'
     },
     footer: {
